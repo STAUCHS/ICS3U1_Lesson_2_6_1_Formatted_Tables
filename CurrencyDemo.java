@@ -8,20 +8,18 @@ class CurrencyDemo extends ConsoleProgram {
 
   
   public void run() {
-
-    double dblSubtotal = 9.99;
-    double dblTax = 0.13;
-  
+    // Declare variables
+    double dblSubtotal;
+    double dblTax;
     double dblTotal;
 
+    // Assign values to Subtotal and tax
+    dblSubtotal = 9.99;
+    dblTax = 0.13;
+
+    // Calculate total
     dblTotal = dblSubtotal + (dblSubtotal * dblTax);
-    System.out.printf("The total is $%.2f%n",dblTotal);
 
-
-
-    
-
-    
-    
+    System.out.println("The total is $" + Math.round(dblTotal));
   }
 }
